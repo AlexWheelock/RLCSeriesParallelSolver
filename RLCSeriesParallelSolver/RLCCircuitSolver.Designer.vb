@@ -37,8 +37,6 @@ Partial Class RLCSeriesParallelCircuitSolver
         Me.C1Label = New System.Windows.Forms.Label()
         Me.C2TextBox = New System.Windows.Forms.TextBox()
         Me.C2Label = New System.Windows.Forms.Label()
-        Me.C3TextBox = New System.Windows.Forms.TextBox()
-        Me.C3Label = New System.Windows.Forms.Label()
         Me.L1TextBox = New System.Windows.Forms.TextBox()
         Me.L1Label = New System.Windows.Forms.Label()
         Me.SolveButton = New System.Windows.Forms.Button()
@@ -50,10 +48,9 @@ Partial Class RLCSeriesParallelCircuitSolver
         Me.R3OmegaLabel = New System.Windows.Forms.Label()
         Me.C1FLabel = New System.Windows.Forms.Label()
         Me.C2FLabel = New System.Windows.Forms.Label()
-        Me.C3FLabel = New System.Windows.Forms.Label()
         Me.L1HLabel = New System.Windows.Forms.Label()
         Me.RwOmegaLabel = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.RwTextBox = New System.Windows.Forms.TextBox()
         Me.RwLabel = New System.Windows.Forms.Label()
         Me.SchematicPictureBox = New System.Windows.Forms.PictureBox()
         CType(Me.SchematicPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -85,6 +82,7 @@ Partial Class RLCSeriesParallelCircuitSolver
         Me.VgenTextBox.Name = "VgenTextBox"
         Me.VgenTextBox.Size = New System.Drawing.Size(96, 20)
         Me.VgenTextBox.TabIndex = 0
+        Me.VgenTextBox.Text = "10"
         '
         'FgenTextBox
         '
@@ -93,6 +91,7 @@ Partial Class RLCSeriesParallelCircuitSolver
         Me.FgenTextBox.Name = "FgenTextBox"
         Me.FgenTextBox.Size = New System.Drawing.Size(96, 20)
         Me.FgenTextBox.TabIndex = 1
+        Me.FgenTextBox.Text = "1000"
         '
         'FgenLabel
         '
@@ -111,6 +110,7 @@ Partial Class RLCSeriesParallelCircuitSolver
         Me.R1TextBox.Name = "R1TextBox"
         Me.R1TextBox.Size = New System.Drawing.Size(96, 20)
         Me.R1TextBox.TabIndex = 2
+        Me.R1TextBox.Text = "4300"
         '
         'R1Label
         '
@@ -129,6 +129,7 @@ Partial Class RLCSeriesParallelCircuitSolver
         Me.R2TextBox.Name = "R2TextBox"
         Me.R2TextBox.Size = New System.Drawing.Size(96, 20)
         Me.R2TextBox.TabIndex = 3
+        Me.R2TextBox.Text = "10000"
         '
         'R2Label
         '
@@ -147,6 +148,7 @@ Partial Class RLCSeriesParallelCircuitSolver
         Me.R3TextBox.Name = "R3TextBox"
         Me.R3TextBox.Size = New System.Drawing.Size(96, 20)
         Me.R3TextBox.TabIndex = 4
+        Me.R3TextBox.Text = "4700"
         '
         'R3Label
         '
@@ -165,6 +167,7 @@ Partial Class RLCSeriesParallelCircuitSolver
         Me.C1TextBox.Name = "C1TextBox"
         Me.C1TextBox.Size = New System.Drawing.Size(96, 20)
         Me.C1TextBox.TabIndex = 5
+        Me.C1TextBox.Text = "0.02"
         '
         'C1Label
         '
@@ -183,6 +186,7 @@ Partial Class RLCSeriesParallelCircuitSolver
         Me.C2TextBox.Name = "C2TextBox"
         Me.C2TextBox.Size = New System.Drawing.Size(96, 20)
         Me.C2TextBox.TabIndex = 6
+        Me.C2TextBox.Text = "0.008"
         '
         'C2Label
         '
@@ -194,36 +198,19 @@ Partial Class RLCSeriesParallelCircuitSolver
         Me.C2Label.TabIndex = 14
         Me.C2Label.Text = "C2"
         '
-        'C3TextBox
-        '
-        Me.C3TextBox.Location = New System.Drawing.Point(348, 186)
-        Me.C3TextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.C3TextBox.Name = "C3TextBox"
-        Me.C3TextBox.Size = New System.Drawing.Size(96, 20)
-        Me.C3TextBox.TabIndex = 7
-        '
-        'C3Label
-        '
-        Me.C3Label.AutoSize = True
-        Me.C3Label.Location = New System.Drawing.Point(325, 189)
-        Me.C3Label.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.C3Label.Name = "C3Label"
-        Me.C3Label.Size = New System.Drawing.Size(20, 13)
-        Me.C3Label.TabIndex = 16
-        Me.C3Label.Text = "C3"
-        '
         'L1TextBox
         '
-        Me.L1TextBox.Location = New System.Drawing.Point(348, 217)
+        Me.L1TextBox.Location = New System.Drawing.Point(348, 196)
         Me.L1TextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.L1TextBox.Name = "L1TextBox"
         Me.L1TextBox.Size = New System.Drawing.Size(96, 20)
-        Me.L1TextBox.TabIndex = 8
+        Me.L1TextBox.TabIndex = 7
+        Me.L1TextBox.Text = "3.5"
         '
         'L1Label
         '
         Me.L1Label.AutoSize = True
-        Me.L1Label.Location = New System.Drawing.Point(327, 220)
+        Me.L1Label.Location = New System.Drawing.Point(327, 199)
         Me.L1Label.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.L1Label.Name = "L1Label"
         Me.L1Label.Size = New System.Drawing.Size(19, 13)
@@ -232,21 +219,21 @@ Partial Class RLCSeriesParallelCircuitSolver
         '
         'SolveButton
         '
-        Me.SolveButton.Location = New System.Drawing.Point(348, 293)
+        Me.SolveButton.Location = New System.Drawing.Point(348, 262)
         Me.SolveButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.SolveButton.Name = "SolveButton"
         Me.SolveButton.Size = New System.Drawing.Size(94, 24)
-        Me.SolveButton.TabIndex = 10
+        Me.SolveButton.TabIndex = 9
         Me.SolveButton.Text = "Solve"
         Me.SolveButton.UseVisualStyleBackColor = True
         '
         'QuitButton
         '
-        Me.QuitButton.Location = New System.Drawing.Point(348, 322)
+        Me.QuitButton.Location = New System.Drawing.Point(348, 291)
         Me.QuitButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.QuitButton.Name = "QuitButton"
         Me.QuitButton.Size = New System.Drawing.Size(94, 24)
-        Me.QuitButton.TabIndex = 11
+        Me.QuitButton.TabIndex = 10
         Me.QuitButton.Text = "Quit"
         Me.QuitButton.UseVisualStyleBackColor = True
         '
@@ -320,20 +307,10 @@ Partial Class RLCSeriesParallelCircuitSolver
         Me.C2FLabel.TabIndex = 28
         Me.C2FLabel.Text = "uF"
         '
-        'C3FLabel
-        '
-        Me.C3FLabel.AutoSize = True
-        Me.C3FLabel.Location = New System.Drawing.Point(447, 189)
-        Me.C3FLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.C3FLabel.Name = "C3FLabel"
-        Me.C3FLabel.Size = New System.Drawing.Size(19, 13)
-        Me.C3FLabel.TabIndex = 29
-        Me.C3FLabel.Text = "uF"
-        '
         'L1HLabel
         '
         Me.L1HLabel.AutoSize = True
-        Me.L1HLabel.Location = New System.Drawing.Point(447, 220)
+        Me.L1HLabel.Location = New System.Drawing.Point(447, 199)
         Me.L1HLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.L1HLabel.Name = "L1HLabel"
         Me.L1HLabel.Size = New System.Drawing.Size(15, 13)
@@ -343,25 +320,26 @@ Partial Class RLCSeriesParallelCircuitSolver
         'RwOmegaLabel
         '
         Me.RwOmegaLabel.AutoSize = True
-        Me.RwOmegaLabel.Location = New System.Drawing.Point(447, 242)
+        Me.RwOmegaLabel.Location = New System.Drawing.Point(447, 221)
         Me.RwOmegaLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.RwOmegaLabel.Name = "RwOmegaLabel"
         Me.RwOmegaLabel.Size = New System.Drawing.Size(16, 13)
         Me.RwOmegaLabel.TabIndex = 33
         Me.RwOmegaLabel.Text = "Ω"
         '
-        'TextBox1
+        'RwTextBox
         '
-        Me.TextBox1.Location = New System.Drawing.Point(348, 240)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(96, 20)
-        Me.TextBox1.TabIndex = 9
+        Me.RwTextBox.Location = New System.Drawing.Point(348, 219)
+        Me.RwTextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RwTextBox.Name = "RwTextBox"
+        Me.RwTextBox.Size = New System.Drawing.Size(96, 20)
+        Me.RwTextBox.TabIndex = 8
+        Me.RwTextBox.Text = "0"
         '
         'RwLabel
         '
         Me.RwLabel.AutoSize = True
-        Me.RwLabel.Location = New System.Drawing.Point(325, 242)
+        Me.RwLabel.Location = New System.Drawing.Point(325, 221)
         Me.RwLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.RwLabel.Name = "RwLabel"
         Me.RwLabel.Size = New System.Drawing.Size(23, 13)
@@ -385,10 +363,9 @@ Partial Class RLCSeriesParallelCircuitSolver
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(475, 488)
         Me.Controls.Add(Me.RwOmegaLabel)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.RwTextBox)
         Me.Controls.Add(Me.RwLabel)
         Me.Controls.Add(Me.L1HLabel)
-        Me.Controls.Add(Me.C3FLabel)
         Me.Controls.Add(Me.C2FLabel)
         Me.Controls.Add(Me.C1FLabel)
         Me.Controls.Add(Me.R3OmegaLabel)
@@ -400,8 +377,6 @@ Partial Class RLCSeriesParallelCircuitSolver
         Me.Controls.Add(Me.SolveButton)
         Me.Controls.Add(Me.L1TextBox)
         Me.Controls.Add(Me.L1Label)
-        Me.Controls.Add(Me.C3TextBox)
-        Me.Controls.Add(Me.C3Label)
         Me.Controls.Add(Me.C2TextBox)
         Me.Controls.Add(Me.C2Label)
         Me.Controls.Add(Me.C1TextBox)
@@ -443,8 +418,6 @@ Partial Class RLCSeriesParallelCircuitSolver
     Friend WithEvents C1Label As Label
     Friend WithEvents C2TextBox As TextBox
     Friend WithEvents C2Label As Label
-    Friend WithEvents C3TextBox As TextBox
-    Friend WithEvents C3Label As Label
     Friend WithEvents L1TextBox As TextBox
     Friend WithEvents L1Label As Label
     Friend WithEvents SolveButton As Button
@@ -456,9 +429,8 @@ Partial Class RLCSeriesParallelCircuitSolver
     Friend WithEvents R3OmegaLabel As Label
     Friend WithEvents C1FLabel As Label
     Friend WithEvents C2FLabel As Label
-    Friend WithEvents C3FLabel As Label
     Friend WithEvents L1HLabel As Label
     Friend WithEvents RwOmegaLabel As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents RwTextBox As TextBox
     Friend WithEvents RwLabel As Label
 End Class
