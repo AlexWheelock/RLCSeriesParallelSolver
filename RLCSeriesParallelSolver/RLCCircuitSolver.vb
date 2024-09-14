@@ -111,27 +111,25 @@ Public Class RLCSeriesParallelCircuitSolver
         Dim iB2 As Double = vParallel / zB2
         Dim iB2Angle As Double = vParallelAngle - zB2Angle
 
-        Dim vR1 As Double
-        Dim vR1Angle As Double
-        Dim vC1 As Double
-        Dim vC1Angle As Double
-        Dim vR2 As Double
-        Dim vR2Angle As Double
-        Dim vL1 As Double
-        Dim vL1Angle As Double
-        Dim vR3 As Double
-        Dim vR3Angle As Double
-        Dim vC2 As Double
-        Dim vC2Angle As Double
+        Dim vR1 As Double = iT * r1
+        Dim vR1Angle As Double = iTAngle
+        Dim vC1 As Double = iT * xC1
+        Dim vC1Angle As Double = -90 + iTAngle
+        Dim vR2 As Double = iB1 * r2
+        Dim vR2Angle As Double = iB1Angle
+        Dim vL1 As Double = iB1 * zL1
+        Dim vL1Angle As Double = zL1Angle + iB1Angle
+        Dim vR3 As Double = iB2 * r3
+        Dim vR3Angle As Double = iB2Angle
+        Dim vC2 As Double = iB2 * xC2
+        Dim vC2Angle As Double = -90 + iB2Angle
 
-        Dim pR1 As Double
-        Dim pR2 As Double
-        Dim pR3 As Double
-        Dim pC1 As Double
-        Dim pC2 As Double
-        Dim pL1 As Double
-
-
+        Dim pR1 As Double = ((0.707 * vR1) * (0.707 * iT))
+        Dim pR2 As Double = ((0.707 * vR2) * (0.707 * iB1))
+        Dim pR3 As Double = ((0.707 * vR3) * (0.707 * iB2))
+        Dim pC1 As Double = ((0.707 * vC1) * (0.707 * iT))
+        Dim pC2 As Double = ((0.707 * vC2) * (0.707 * iB2))
+        Dim pL1 As Double = ((0.707 * vL1) * (0.707 * iB1))
 
     End Sub
 
