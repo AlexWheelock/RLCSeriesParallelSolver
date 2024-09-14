@@ -64,7 +64,7 @@ Public Class RLCSeriesParallelCircuitSolver
         Return reactance
     End Function
 
-    Sub SolveCircuit()
+    Sub SolveCircuitAndDisplay()
         Dim r1 As Double = CDbl(R1TextBox.Text)
         Dim r2 As Double = CDbl(R2TextBox.Text)
         Dim rW As Double = CDbl(RwTextBox.Text)
@@ -80,23 +80,36 @@ Public Class RLCSeriesParallelCircuitSolver
         Dim xC1 As Double = CapacitiveReactance(c1 * (10 ^ -6))
         Dim xC2 As Double = CapacitiveReactance(c2 * (10 ^ -6))
 
-        Dim zT As Double
-        Dim zTAngle As Double
-        Dim zS As Double
-        Dim zSAngle As Double
-        Dim zB1 As Double
-        Dim zB1Angle As Double
-        Dim zB2 As Double
-        Dim zB2Angle As Double
-        Dim zParallel As Double
-        Dim zParallelAngle As Double
+        Dim zB1 As Double = RectangularToPolarMagnitude(r2 + rW, xL1)
+        Dim zB1Angle As Double = RectangularToPolarAngle(r2 + rW, xL1)
+        Dim zB2 As Double = RectangularToPolarMagnitude(r3, -xC2)
+        Dim zB2Angle As Double = RectangularToPolarAngle(r3, -xC2)
 
-        Dim iT As Double
-        Dim iTAngle As Double
-        Dim iB1 As Double
-        Dim iB1Angle As Double
-        Dim iB2 As Double
-        Dim iB2Angle As Double
+        Dim numerator As Double = zB1 * zB2
+        Dim denominatorX As Double = r2 + rW + r3
+        Dim denominatorY As Double = xL1 + (-xC2)
+        Dim denominatorPolar As Double = RectangularToPolarMagnitude(denominatorX, denominatorY)
+        Dim denominatorAngle As Double = RectangularToPolarAngle(denominatorX, denominatorY)
+
+        Dim zParallelPolar As Double = numerator / denominatorPolar
+        Dim zParallelAngle As Double = zB1Angle + zB2Angle - denominatorAngle
+        Dim zParallelX As Double = PolarToRectangularX(zParallelPolar, zParallelAngle)
+        Dim zParallelY As Double = PolarToRectangularY(zParallelPolar, zParallelAngle)
+        Dim zTX As Double = zParallelX + r1
+        Dim zTY As Double = zParallelY + (-xC1)
+        Dim zTPolar As Double = RectangularToPolarMagnitude(zTX, zTY)
+        Dim zTAngle As Double = RectangularToPolarAngle(zTX, zTY)
+
+        Dim iT As Double = CDbl(VgenTextBox.Text) / zTPolar
+        Dim iTAngle As Double = 0 - zTAngle
+
+        Dim vParallel As Double = iT * zParallelPolar
+        Dim vParallelAngle As Double = iTAngle + zParallelAngle
+
+        Dim iB1 As Double = vParallel / zB1
+        Dim iB1Angle As Double = vParallelAngle - zB1Angle
+        Dim iB2 As Double = vParallel / zB2
+        Dim iB2Angle As Double = vParallelAngle - zB2Angle
 
         Dim vR1 As Double
         Dim vR1Angle As Double
@@ -122,16 +135,12 @@ Public Class RLCSeriesParallelCircuitSolver
 
     End Sub
 
-    Sub DisplayResults()
-
-    End Sub
-
     Private Sub RLCCircuitSolver_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        SolveCircuit()
+        SolveCircuitAndDisplay()
     End Sub
 
     Private Sub SolveButton_Click(sender As Object, e As EventArgs) Handles SolveButton.Click
-        SolveCircuit()
+        SolveCircuitAndDisplay()
     End Sub
 
     Private Sub QuitButton_Click(sender As Object, e As EventArgs) Handles QuitButton.Click
