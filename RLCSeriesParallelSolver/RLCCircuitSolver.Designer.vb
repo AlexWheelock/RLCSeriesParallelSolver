@@ -53,6 +53,7 @@ Partial Class RLCSeriesParallelCircuitSolver
         Me.RwTextBox = New System.Windows.Forms.TextBox()
         Me.RwLabel = New System.Windows.Forms.Label()
         Me.SchematicPictureBox = New System.Windows.Forms.PictureBox()
+        Me.ClearButton = New System.Windows.Forms.Button()
         CType(Me.SchematicPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -237,6 +238,7 @@ Partial Class RLCSeriesParallelCircuitSolver
         '
         'SolveButton
         '
+        Me.SolveButton.BackColor = System.Drawing.Color.White
         Me.SolveButton.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SolveButton.Location = New System.Drawing.Point(347, 293)
         Me.SolveButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
@@ -244,18 +246,19 @@ Partial Class RLCSeriesParallelCircuitSolver
         Me.SolveButton.Size = New System.Drawing.Size(94, 24)
         Me.SolveButton.TabIndex = 9
         Me.SolveButton.Text = "Solve"
-        Me.SolveButton.UseVisualStyleBackColor = True
+        Me.SolveButton.UseVisualStyleBackColor = False
         '
         'QuitButton
         '
+        Me.QuitButton.BackColor = System.Drawing.Color.White
         Me.QuitButton.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.QuitButton.Location = New System.Drawing.Point(347, 321)
+        Me.QuitButton.Location = New System.Drawing.Point(347, 369)
         Me.QuitButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.QuitButton.Name = "QuitButton"
         Me.QuitButton.Size = New System.Drawing.Size(94, 24)
         Me.QuitButton.TabIndex = 10
         Me.QuitButton.Text = "Quit"
-        Me.QuitButton.UseVisualStyleBackColor = True
+        Me.QuitButton.UseVisualStyleBackColor = False
         '
         'VpLabel
         '
@@ -380,6 +383,7 @@ Partial Class RLCSeriesParallelCircuitSolver
         'SchematicPictureBox
         '
         Me.SchematicPictureBox.BackgroundImage = Global.RLCSeriesParallelSolver.My.Resources.Resources.Schematic2
+        Me.SchematicPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.SchematicPictureBox.Location = New System.Drawing.Point(9, 10)
         Me.SchematicPictureBox.Margin = New System.Windows.Forms.Padding(2)
         Me.SchematicPictureBox.Name = "SchematicPictureBox"
@@ -388,11 +392,25 @@ Partial Class RLCSeriesParallelCircuitSolver
         Me.SchematicPictureBox.TabIndex = 0
         Me.SchematicPictureBox.TabStop = False
         '
+        'ClearButton
+        '
+        Me.ClearButton.BackColor = System.Drawing.Color.White
+        Me.ClearButton.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ClearButton.Location = New System.Drawing.Point(347, 321)
+        Me.ClearButton.Margin = New System.Windows.Forms.Padding(2)
+        Me.ClearButton.Name = "ClearButton"
+        Me.ClearButton.Size = New System.Drawing.Size(94, 24)
+        Me.ClearButton.TabIndex = 34
+        Me.ClearButton.Text = "Clear"
+        Me.ClearButton.UseVisualStyleBackColor = False
+        '
         'RLCSeriesParallelCircuitSolver
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(475, 488)
+        Me.Controls.Add(Me.ClearButton)
         Me.Controls.Add(Me.RwOmegaLabel)
         Me.Controls.Add(Me.RwTextBox)
         Me.Controls.Add(Me.RwLabel)
@@ -426,6 +444,7 @@ Partial Class RLCSeriesParallelCircuitSolver
         Me.Controls.Add(Me.SchematicPictureBox)
         Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "RLCSeriesParallelCircuitSolver"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "RLC Series Parallel Circuit Solver"
         CType(Me.SchematicPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -464,4 +483,5 @@ Partial Class RLCSeriesParallelCircuitSolver
     Friend WithEvents RwOmegaLabel As Label
     Friend WithEvents RwTextBox As TextBox
     Friend WithEvents RwLabel As Label
+    Friend WithEvents ClearButton As Button
 End Class
