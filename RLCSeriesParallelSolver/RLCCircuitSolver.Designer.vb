@@ -58,168 +58,187 @@ Partial Class RLCSeriesParallelCircuitSolver
         '
         'DisplayListBox
         '
+        Me.DisplayListBox.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DisplayListBox.FormattingEnabled = True
+        Me.DisplayListBox.ItemHeight = 14
         Me.DisplayListBox.Location = New System.Drawing.Point(9, 162)
         Me.DisplayListBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DisplayListBox.Name = "DisplayListBox"
-        Me.DisplayListBox.Size = New System.Drawing.Size(298, 316)
+        Me.DisplayListBox.Size = New System.Drawing.Size(298, 312)
         Me.DisplayListBox.TabIndex = 20
         '
         'VgenLabel
         '
         Me.VgenLabel.AutoSize = True
-        Me.VgenLabel.Location = New System.Drawing.Point(315, 13)
+        Me.VgenLabel.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.VgenLabel.Location = New System.Drawing.Point(309, 19)
         Me.VgenLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.VgenLabel.Name = "VgenLabel"
-        Me.VgenLabel.Size = New System.Drawing.Size(32, 13)
+        Me.VgenLabel.Size = New System.Drawing.Size(35, 14)
         Me.VgenLabel.TabIndex = 2
         Me.VgenLabel.Text = "Vgen"
         '
         'VgenTextBox
         '
+        Me.VgenTextBox.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.VgenTextBox.Location = New System.Drawing.Point(348, 11)
         Me.VgenTextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.VgenTextBox.Name = "VgenTextBox"
-        Me.VgenTextBox.Size = New System.Drawing.Size(96, 20)
+        Me.VgenTextBox.Size = New System.Drawing.Size(96, 22)
         Me.VgenTextBox.TabIndex = 0
         Me.VgenTextBox.Text = "10"
         '
         'FgenTextBox
         '
-        Me.FgenTextBox.Location = New System.Drawing.Point(348, 33)
+        Me.FgenTextBox.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FgenTextBox.Location = New System.Drawing.Point(347, 37)
         Me.FgenTextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.FgenTextBox.Name = "FgenTextBox"
-        Me.FgenTextBox.Size = New System.Drawing.Size(96, 20)
+        Me.FgenTextBox.Size = New System.Drawing.Size(96, 22)
         Me.FgenTextBox.TabIndex = 1
         Me.FgenTextBox.Text = "1000"
         '
         'FgenLabel
         '
         Me.FgenLabel.AutoSize = True
-        Me.FgenLabel.Location = New System.Drawing.Point(315, 36)
+        Me.FgenLabel.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FgenLabel.Location = New System.Drawing.Point(308, 45)
         Me.FgenLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.FgenLabel.Name = "FgenLabel"
-        Me.FgenLabel.Size = New System.Drawing.Size(31, 13)
+        Me.FgenLabel.Size = New System.Drawing.Size(35, 14)
         Me.FgenLabel.TabIndex = 4
         Me.FgenLabel.Text = "Fgen"
         '
         'R1TextBox
         '
-        Me.R1TextBox.Location = New System.Drawing.Point(348, 64)
+        Me.R1TextBox.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.R1TextBox.Location = New System.Drawing.Point(348, 73)
         Me.R1TextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.R1TextBox.Name = "R1TextBox"
-        Me.R1TextBox.Size = New System.Drawing.Size(96, 20)
+        Me.R1TextBox.Size = New System.Drawing.Size(96, 22)
         Me.R1TextBox.TabIndex = 2
         Me.R1TextBox.Text = "4300"
         '
         'R1Label
         '
         Me.R1Label.AutoSize = True
-        Me.R1Label.Location = New System.Drawing.Point(325, 67)
+        Me.R1Label.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.R1Label.Location = New System.Drawing.Point(323, 76)
         Me.R1Label.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.R1Label.Name = "R1Label"
-        Me.R1Label.Size = New System.Drawing.Size(21, 13)
+        Me.R1Label.Size = New System.Drawing.Size(21, 14)
         Me.R1Label.TabIndex = 6
         Me.R1Label.Text = "R1"
         '
         'R2TextBox
         '
-        Me.R2TextBox.Location = New System.Drawing.Point(348, 87)
+        Me.R2TextBox.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.R2TextBox.Location = New System.Drawing.Point(348, 99)
         Me.R2TextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.R2TextBox.Name = "R2TextBox"
-        Me.R2TextBox.Size = New System.Drawing.Size(96, 20)
+        Me.R2TextBox.Size = New System.Drawing.Size(96, 22)
         Me.R2TextBox.TabIndex = 3
         Me.R2TextBox.Text = "10000"
         '
         'R2Label
         '
         Me.R2Label.AutoSize = True
-        Me.R2Label.Location = New System.Drawing.Point(325, 90)
+        Me.R2Label.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.R2Label.Location = New System.Drawing.Point(323, 102)
         Me.R2Label.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.R2Label.Name = "R2Label"
-        Me.R2Label.Size = New System.Drawing.Size(21, 13)
+        Me.R2Label.Size = New System.Drawing.Size(21, 14)
         Me.R2Label.TabIndex = 8
         Me.R2Label.Text = "R2"
         '
         'R3TextBox
         '
-        Me.R3TextBox.Location = New System.Drawing.Point(348, 110)
+        Me.R3TextBox.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.R3TextBox.Location = New System.Drawing.Point(348, 125)
         Me.R3TextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.R3TextBox.Name = "R3TextBox"
-        Me.R3TextBox.Size = New System.Drawing.Size(96, 20)
+        Me.R3TextBox.Size = New System.Drawing.Size(96, 22)
         Me.R3TextBox.TabIndex = 4
         Me.R3TextBox.Text = "4700"
         '
         'R3Label
         '
         Me.R3Label.AutoSize = True
-        Me.R3Label.Location = New System.Drawing.Point(325, 112)
+        Me.R3Label.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.R3Label.Location = New System.Drawing.Point(323, 128)
         Me.R3Label.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.R3Label.Name = "R3Label"
-        Me.R3Label.Size = New System.Drawing.Size(21, 13)
+        Me.R3Label.Size = New System.Drawing.Size(21, 14)
         Me.R3Label.TabIndex = 10
         Me.R3Label.Text = "R3"
         '
         'C1TextBox
         '
-        Me.C1TextBox.Location = New System.Drawing.Point(348, 141)
+        Me.C1TextBox.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.C1TextBox.Location = New System.Drawing.Point(348, 162)
         Me.C1TextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.C1TextBox.Name = "C1TextBox"
-        Me.C1TextBox.Size = New System.Drawing.Size(96, 20)
+        Me.C1TextBox.Size = New System.Drawing.Size(96, 22)
         Me.C1TextBox.TabIndex = 5
         Me.C1TextBox.Text = "0.02"
         '
         'C1Label
         '
         Me.C1Label.AutoSize = True
-        Me.C1Label.Location = New System.Drawing.Point(325, 143)
+        Me.C1Label.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.C1Label.Location = New System.Drawing.Point(323, 165)
         Me.C1Label.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.C1Label.Name = "C1Label"
-        Me.C1Label.Size = New System.Drawing.Size(20, 13)
+        Me.C1Label.Size = New System.Drawing.Size(21, 14)
         Me.C1Label.TabIndex = 12
         Me.C1Label.Text = "C1"
         '
         'C2TextBox
         '
-        Me.C2TextBox.Location = New System.Drawing.Point(348, 163)
+        Me.C2TextBox.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.C2TextBox.Location = New System.Drawing.Point(348, 188)
         Me.C2TextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.C2TextBox.Name = "C2TextBox"
-        Me.C2TextBox.Size = New System.Drawing.Size(96, 20)
+        Me.C2TextBox.Size = New System.Drawing.Size(96, 22)
         Me.C2TextBox.TabIndex = 6
         Me.C2TextBox.Text = "0.008"
         '
         'C2Label
         '
         Me.C2Label.AutoSize = True
-        Me.C2Label.Location = New System.Drawing.Point(325, 166)
+        Me.C2Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.C2Label.Location = New System.Drawing.Point(322, 191)
         Me.C2Label.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.C2Label.Name = "C2Label"
-        Me.C2Label.Size = New System.Drawing.Size(20, 13)
+        Me.C2Label.Size = New System.Drawing.Size(22, 15)
         Me.C2Label.TabIndex = 14
         Me.C2Label.Text = "C2"
         '
         'L1TextBox
         '
-        Me.L1TextBox.Location = New System.Drawing.Point(348, 196)
+        Me.L1TextBox.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.L1TextBox.Location = New System.Drawing.Point(348, 226)
         Me.L1TextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.L1TextBox.Name = "L1TextBox"
-        Me.L1TextBox.Size = New System.Drawing.Size(96, 20)
+        Me.L1TextBox.Size = New System.Drawing.Size(96, 22)
         Me.L1TextBox.TabIndex = 7
         Me.L1TextBox.Text = "3.5"
         '
         'L1Label
         '
         Me.L1Label.AutoSize = True
-        Me.L1Label.Location = New System.Drawing.Point(327, 199)
+        Me.L1Label.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.L1Label.Location = New System.Drawing.Point(323, 229)
         Me.L1Label.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.L1Label.Name = "L1Label"
-        Me.L1Label.Size = New System.Drawing.Size(19, 13)
+        Me.L1Label.Size = New System.Drawing.Size(21, 14)
         Me.L1Label.TabIndex = 18
         Me.L1Label.Text = "L1"
         '
         'SolveButton
         '
-        Me.SolveButton.Location = New System.Drawing.Point(348, 262)
+        Me.SolveButton.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SolveButton.Location = New System.Drawing.Point(347, 293)
         Me.SolveButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.SolveButton.Name = "SolveButton"
         Me.SolveButton.Size = New System.Drawing.Size(94, 24)
@@ -229,7 +248,8 @@ Partial Class RLCSeriesParallelCircuitSolver
         '
         'QuitButton
         '
-        Me.QuitButton.Location = New System.Drawing.Point(348, 291)
+        Me.QuitButton.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.QuitButton.Location = New System.Drawing.Point(347, 321)
         Me.QuitButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.QuitButton.Name = "QuitButton"
         Me.QuitButton.Size = New System.Drawing.Size(94, 24)
@@ -240,109 +260,120 @@ Partial Class RLCSeriesParallelCircuitSolver
         'VpLabel
         '
         Me.VpLabel.AutoSize = True
-        Me.VpLabel.Location = New System.Drawing.Point(447, 13)
+        Me.VpLabel.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.VpLabel.Location = New System.Drawing.Point(448, 19)
         Me.VpLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.VpLabel.Name = "VpLabel"
-        Me.VpLabel.Size = New System.Drawing.Size(20, 13)
+        Me.VpLabel.Size = New System.Drawing.Size(21, 14)
         Me.VpLabel.TabIndex = 22
         Me.VpLabel.Text = "Vp"
         '
         'HzLabel
         '
         Me.HzLabel.AutoSize = True
-        Me.HzLabel.Location = New System.Drawing.Point(447, 36)
+        Me.HzLabel.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HzLabel.Location = New System.Drawing.Point(447, 45)
         Me.HzLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.HzLabel.Name = "HzLabel"
-        Me.HzLabel.Size = New System.Drawing.Size(20, 13)
+        Me.HzLabel.Size = New System.Drawing.Size(21, 14)
         Me.HzLabel.TabIndex = 23
         Me.HzLabel.Text = "Hz"
         '
         'R1OmegaLabel
         '
         Me.R1OmegaLabel.AutoSize = True
-        Me.R1OmegaLabel.Location = New System.Drawing.Point(448, 67)
+        Me.R1OmegaLabel.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.R1OmegaLabel.Location = New System.Drawing.Point(448, 81)
         Me.R1OmegaLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.R1OmegaLabel.Name = "R1OmegaLabel"
-        Me.R1OmegaLabel.Size = New System.Drawing.Size(16, 13)
+        Me.R1OmegaLabel.Size = New System.Drawing.Size(14, 14)
         Me.R1OmegaLabel.TabIndex = 24
         Me.R1OmegaLabel.Text = "Ω"
         '
         'R2OmegaLabel
         '
         Me.R2OmegaLabel.AutoSize = True
-        Me.R2OmegaLabel.Location = New System.Drawing.Point(447, 90)
+        Me.R2OmegaLabel.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.R2OmegaLabel.Location = New System.Drawing.Point(447, 107)
         Me.R2OmegaLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.R2OmegaLabel.Name = "R2OmegaLabel"
-        Me.R2OmegaLabel.Size = New System.Drawing.Size(16, 13)
+        Me.R2OmegaLabel.Size = New System.Drawing.Size(14, 14)
         Me.R2OmegaLabel.TabIndex = 25
         Me.R2OmegaLabel.Text = "Ω"
         '
         'R3OmegaLabel
         '
         Me.R3OmegaLabel.AutoSize = True
-        Me.R3OmegaLabel.Location = New System.Drawing.Point(447, 112)
+        Me.R3OmegaLabel.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.R3OmegaLabel.Location = New System.Drawing.Point(447, 133)
         Me.R3OmegaLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.R3OmegaLabel.Name = "R3OmegaLabel"
-        Me.R3OmegaLabel.Size = New System.Drawing.Size(16, 13)
+        Me.R3OmegaLabel.Size = New System.Drawing.Size(14, 14)
         Me.R3OmegaLabel.TabIndex = 26
         Me.R3OmegaLabel.Text = "Ω"
         '
         'C1FLabel
         '
         Me.C1FLabel.AutoSize = True
-        Me.C1FLabel.Location = New System.Drawing.Point(447, 143)
+        Me.C1FLabel.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.C1FLabel.Location = New System.Drawing.Point(447, 170)
         Me.C1FLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.C1FLabel.Name = "C1FLabel"
-        Me.C1FLabel.Size = New System.Drawing.Size(19, 13)
+        Me.C1FLabel.Size = New System.Drawing.Size(21, 14)
         Me.C1FLabel.TabIndex = 27
         Me.C1FLabel.Text = "uF"
         '
         'C2FLabel
         '
         Me.C2FLabel.AutoSize = True
-        Me.C2FLabel.Location = New System.Drawing.Point(447, 166)
+        Me.C2FLabel.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.C2FLabel.Location = New System.Drawing.Point(447, 196)
         Me.C2FLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.C2FLabel.Name = "C2FLabel"
-        Me.C2FLabel.Size = New System.Drawing.Size(19, 13)
+        Me.C2FLabel.Size = New System.Drawing.Size(21, 14)
         Me.C2FLabel.TabIndex = 28
         Me.C2FLabel.Text = "uF"
         '
         'L1HLabel
         '
         Me.L1HLabel.AutoSize = True
-        Me.L1HLabel.Location = New System.Drawing.Point(447, 199)
+        Me.L1HLabel.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.L1HLabel.Location = New System.Drawing.Point(447, 234)
         Me.L1HLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.L1HLabel.Name = "L1HLabel"
-        Me.L1HLabel.Size = New System.Drawing.Size(15, 13)
+        Me.L1HLabel.Size = New System.Drawing.Size(14, 14)
         Me.L1HLabel.TabIndex = 30
         Me.L1HLabel.Text = "H"
         '
         'RwOmegaLabel
         '
         Me.RwOmegaLabel.AutoSize = True
-        Me.RwOmegaLabel.Location = New System.Drawing.Point(447, 221)
+        Me.RwOmegaLabel.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RwOmegaLabel.Location = New System.Drawing.Point(447, 260)
         Me.RwOmegaLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.RwOmegaLabel.Name = "RwOmegaLabel"
-        Me.RwOmegaLabel.Size = New System.Drawing.Size(16, 13)
+        Me.RwOmegaLabel.Size = New System.Drawing.Size(14, 14)
         Me.RwOmegaLabel.TabIndex = 33
         Me.RwOmegaLabel.Text = "Ω"
         '
         'RwTextBox
         '
-        Me.RwTextBox.Location = New System.Drawing.Point(348, 219)
+        Me.RwTextBox.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RwTextBox.Location = New System.Drawing.Point(348, 252)
         Me.RwTextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.RwTextBox.Name = "RwTextBox"
-        Me.RwTextBox.Size = New System.Drawing.Size(96, 20)
+        Me.RwTextBox.Size = New System.Drawing.Size(96, 22)
         Me.RwTextBox.TabIndex = 8
         Me.RwTextBox.Text = "0"
         '
         'RwLabel
         '
         Me.RwLabel.AutoSize = True
-        Me.RwLabel.Location = New System.Drawing.Point(325, 221)
+        Me.RwLabel.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RwLabel.Location = New System.Drawing.Point(323, 255)
         Me.RwLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.RwLabel.Name = "RwLabel"
-        Me.RwLabel.Size = New System.Drawing.Size(23, 13)
+        Me.RwLabel.Size = New System.Drawing.Size(21, 14)
         Me.RwLabel.TabIndex = 32
         Me.RwLabel.Text = "Rw"
         '
