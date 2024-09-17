@@ -8,6 +8,21 @@ Option Strict On
 Option Explicit On
 Public Class RLCSeriesParallelCircuitSolver
 
+    Dim outputList As New List(Of String)
+    Sub OutputToFile()
+        Try
+            FileOpen(1, "..\..\Data.txt", OpenMode.Append)
+
+            For Each line In outputList
+                PrintLine(1, line)
+            Next
+
+        Catch ex As Exception
+            MsgBox("File not found!!!")
+        End Try
+        FileClose(1)
+    End Sub
+
     'Validates the input values as numbers so that there is no issues trying to solve for the circuit
     Sub ValidateInputs()
         Dim valid As Boolean = True
@@ -259,7 +274,6 @@ Public Class RLCSeriesParallelCircuitSolver
         Dim pC2 As Double = (0.707 * vC2) * (0.707 * iB2)
         Dim pL1 As Double = (0.707 * vL1) * (0.707 * iB1)
 
-        Dim outputList As New List(Of String)
         outputList.Clear()
 
         Dim temp As String
@@ -376,6 +390,7 @@ Public Class RLCSeriesParallelCircuitSolver
         For Each output In outputList
             DisplayListBox.Items.Add(output)
         Next
+        OutputToFile()
     End Sub
 
     '================================================================================================================
@@ -385,10 +400,17 @@ Public Class RLCSeriesParallelCircuitSolver
     'Solves the circuit with the default values first thing
     Private Sub RLCCircuitSolver_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ValidateInputs()
+        Try
+            FileOpen(1, "..\..\Data.txt", OpenMode.Append)
+        Catch ex As Exception
+            FileOpen(1, "..\..\Data.txt", OpenMode.Output)
+        End Try
+        FileClose(1)
     End Sub
 
     'Tries to solve the circuit with new values, validates inputs first
     Private Sub SolveButton_Click(sender As Object, e As EventArgs) Handles SolveButton.Click
+        DisplayListBox.Items.Clear()
         ValidateInputs()
     End Sub
 
